@@ -1,0 +1,23 @@
+#CVE      
+  
+
+#ZenTaoPMS 11.1
+#File operation
+
+The vulnerability was discovered by downloading the program's source code to local and online deployment tests.      
+
+Location:        
+http://localhost/bug-browse-1.html   
+Upload an attachment when submitting a comment,use burpsuite to grab the suffix of the packet change file.Refresh the page to see the changed file.
+
+Harm：       
+Can feel free to modify the file.
+
+Conditions for Execution：      
+Normal access can    
+
+Edition：     
+versions = 11.1  
+
+POC :      
+POST request:fileName=filename&extension=file format
