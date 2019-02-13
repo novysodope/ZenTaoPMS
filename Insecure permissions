@@ -1,0 +1,23 @@
+#CVE      
+  
+
+#ZenTaoPMS 11.1
+#Insecure permissions
+
+The vulnerability was discovered by downloading the program's source code to local and online deployment tests.      
+
+Location:        
+http://localhost/file-edit-ID.html  
+Upload an attachment when submitting a comment,change the attachment ID of the URL to someone else's attachment ID when renaming.
+
+Harm：       
+Can feel free to modify the file.
+
+Conditions for Execution：      
+Normal access can    
+
+Edition：     
+versions = 11.1  
+
+POC : 
+http://127.0.0.1:1236/file-edit-2.html    （http://localhost/file-edit-ID.html）
